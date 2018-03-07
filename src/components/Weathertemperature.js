@@ -1,5 +1,9 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
+import {CLOUD,
+    CLOUDY,
+    SUN,
+    RAIN} from './../constants/weathers';
 
 const stataToIconName = weatherState => {
     switch (weatherState){

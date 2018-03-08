@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
-import {CLOUD, CLOUDY, SUN, RAIN} from './../constants/weathers';
+import {CLOUD, CLOUDY, SUN, RAIN} from './../../../constants/weathers';
 import PropTypes from 'prop-types';
 
 const stataToIconName = weatherState => {

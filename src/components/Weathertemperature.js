@@ -1,17 +1,20 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
 import {CLOUD, CLOUDY, SUN, RAIN} from './../constants/weathers';
+import PropTypes from 'prop-types';
 
 const stataToIconName = weatherState => {
-    swicth (weatherState) {
-        case CLOUD :
+    switch (weatherState) {      
+    case CLOUD:
             return "cloud";
-        case CLOUDY :
+        case CLOUDY:
             return "cloudy";
-        case SUN :
+        case SUN:
             return "day-sunday";
-        case RAIN :
+        case RAIN:
             return "rain";
+        default:
+            return "day-sunday";
     }
 };
 
@@ -22,9 +25,15 @@ const getWeatherIcons = weatherState => {
 const Weathertemperature = ({temperature, weatherState}) => (
     <div>
        {getWeatherIcons(weatherState)}
-        <span>32 C°</span>
-        </div>
+        <span>{temperature} C°</span>
+    </div>
     
 );
+
+Weathertemperature.prototype = {
+    temperature: PropTypes.number,
+    weatherState: PropTypes.string,
+    
+}
 
 export default Weathertemperature;

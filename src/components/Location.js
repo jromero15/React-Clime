@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 const Location = (props) => {
     const {city} = props;
     return(
@@ -10,4 +10,7 @@ const Location = (props) => {
     </div>);
 };
 
+Location.prototype = {
+    city: PropTypes.number.isRequired,
+}
 export default Location;

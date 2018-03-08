@@ -1,7 +1,7 @@
 import React from 'react';
 import Weathertemperature from './Weathertemperature';
 import Weatherextrainfo from './Weatherextrainfo';
-import { CLOUD, CLOUDY, SUN, RAIN } from '../constants/weathers';
+import { CLOUD, CLOUDY, SUN, RAIN } from './../constants/weathers';
 
 const Weatherdata = () => (
     <div>

@@ -3,14 +3,14 @@ import WeatherIcons from 'react-weathericons';
 import {CLOUD, CLOUDY, SUN, RAIN} from './../constants/weathers';
 
 const stataToIconName = weatherState => {
-    switch (weatherState) {
-        case CLOUD:
+    swicth (weatherState) {
+        case CLOUD :
             return "cloud";
         case CLOUDY :
             return "cloudy";
         case SUN :
             return "day-sunday";
-        case RAIN:
+        case RAIN :
             return "rain";
     }
 };

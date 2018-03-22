@@ -1,3 +1,31 @@
-.prueba {
-    background: blue;
+.Weatherdata{
+    background: blue; 
+    width: 400px; 
+    height: 100px;
+    line-height: 100px;
 }
+
+.Weathertemperature{
+    background :yellow;
+    width: 60%;
+    display: inline-block;
+
+}
+
+.temperature{
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #333
+}
+
+.wicon{
+
+}
+
+.Weatherextrainfo{
+    background: red;
+    width: 40%;
+    display: inline-block;
+}
+

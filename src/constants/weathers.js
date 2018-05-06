@@ -1,7 +1,7 @@
-export const  CLOUD = "cloud";
+export const CLOUD = "cloud";
 
 export const CLOUDY = "cloudy";
 
-export const SUN = "sun";
+export const HAIL = "hail";
 
 export const RAIN = "rain";

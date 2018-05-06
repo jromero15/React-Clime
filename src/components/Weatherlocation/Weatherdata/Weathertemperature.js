@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
-import {CLOUD, CLOUDY, SUN, RAIN} from './../../../constants/weathers';
+import {CLOUD, CLOUDY, HAIL, RAIN} from './../../../constants/weathers';
 import PropTypes from 'prop-types';
 import './Style.css';
 
@@ -10,8 +10,8 @@ const stataToIconName = weatherState => {
             return "cloud";
         case CLOUDY:
             return "cloudy";
-        case SUN:
-            return "day-sunday";
+        case HAIL:
+            return "hail";
         case RAIN:
             return "rain";
     }
@@ -33,7 +33,7 @@ const Weathertemperature = ({temperature, weatherState}) => (
 Weathertemperature.prototype = {
     temperature: PropTypes.number,
     weatherState: PropTypes.string,
-    
+
 }
 
 export default Weathertemperature;
